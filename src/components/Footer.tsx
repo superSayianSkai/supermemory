@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
                 </div>
 
                 {/* FOOTER INFO */}
-                <div className="border-t flex-col border-white/10 px-4 sm:px-8 py-6 flex  lg:flex-row justify-between items-center gap-4">
+                <div className="border-t flex-col opacity-50 border-white/10 px-4 sm:px-8 py-6 flex  lg:flex-row justify-between items-center gap-4">
                     <div className="max-md:order-5 text-center sm:text-left">
                         © 2025 supermemory.ai — made by Tonik
                     </div>

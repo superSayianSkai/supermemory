@@ -39,9 +39,9 @@ const FeaturesFeatures = () => {
                             {/* Card 1 */}
                             <div style={{
                                 clipPath:
-                                    "polygon(0 0, 75% 0, 100% 25%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
+                                    "polygon(0 0, 90% 0, 100% 15%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
                                 WebkitClipPath:
-                                    "polygon(0 0, 75% 0%, 100% 25%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
+                                    "polygon(0 0, 90% 0, 100% 15%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
                                 border: `1px sm:border-2 solid`,
                                 borderRadius: '8px sm:12px',
                             }} className="bg-white py-12 px-8 space-y-8 shadow-sm">
@@ -55,9 +55,9 @@ const FeaturesFeatures = () => {
                             {/* Card 2 */}
                             <div style={{
                                 clipPath:
-                                    "polygon(0 0, 75% 0, 100% 25%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
+                                    "polygon(0 0, 90% 0, 100% 15%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
                                 WebkitClipPath:
-                                    "polygon(0 0, 75% 0%, 100% 25%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
+                                    "polygon(0 0, 90% 0, 100% 15%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
                                 border: `1px sm:border-2 solid`,
                                 borderRadius: '8px sm:12px',
                             }} className="bg-white py-12 px-8 space-y-8 shadow-sm">
@@ -70,13 +70,13 @@ const FeaturesFeatures = () => {
                             {/* Card 3 (spans 2 columns like the graph one) */}
                             <div style={{
                                 clipPath:
-                                    "polygon(0 0, 75% 0, 100% 25%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
+                                    "polygon(0 0, 90% 0, 100% 15%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
                                 WebkitClipPath:
-                                    "polygon(0 0, 75% 0%, 100% 25%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
+                                    "polygon(0 0, 90% 0, 100% 15%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
                                 border: `1px sm:border-2 solid`,
                                 borderRadius: '8px sm:12px',
-                            }} className="bg-white grid grid-cols-2 px-8 pt-20 pb-10 rounded-lg shadow-sm col-span-2">
-                                <div className="space-y-10">
+                            }} className="bg-white flex-col md:grid grid-cols-2 px-8 pt-20 pb-10 rounded-lg shadow-sm col-span-2">
+                                <div className="max-sm:-mb-15 md:space-y-10">
                                     <img src="https://cdn.prod.website-files.com/6826235ef861ed9464b064c8/6826235ef861ed9464b06567_icon-features-grid_05.png" loading="lazy" alt="" className="w-[4.5rem] h-[4.5rem]" />
                                     <h1 className="text-[1rem] text-gray-500 uppercase">Interoperability</h1>
                                     <h4 className="font-bold mb-2 text-black text-2xl">Model-interoperable APIs</h4>
@@ -84,7 +84,7 @@ const FeaturesFeatures = () => {
                                         Switch between models. keep your memory.</p>
                                 </div>
 
-                                <div className="flex flex-col flex-wrap justify-center items-center text-center h-full gap-x-10 gap-y-10 ">
+                                <div className="flex flex-col flex-wrap justify-center  items-center md:text-center h-full pb-20 gap-x-10 gap-y-10 ">
                                     <div className="max-w-[26ch] space-y-15">
                                         <div className="text-[.7rem] uppercase text-gray-500">comparison of evaluation metrics: <span className="text-blue-400">supermemory</span> vs major memory provide</div>
                                         <img src="https://cdn.prod.website-files.com/6826235ef861ed9464b064c8/6826235ef861ed9464b06568_Frame%2020.svg" loading="lazy" />
@@ -96,9 +96,9 @@ const FeaturesFeatures = () => {
                             {/* Card 4 */}
                             <div style={{
                                 clipPath:
-                                    "polygon(0 0, 75% 0, 100% 25%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
+                                    "polygon(0 0, 90% 0, 100% 15%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
                                 WebkitClipPath:
-                                    "polygon(0 0, 75% 0%, 100% 25%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
+                                    "polygon(0 0, 90% 0, 100% 15%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
                                 border: `1px sm:border-2 solid`,
                                 borderRadius: '8px sm:12px',
                             }} className="bg-white py-12 px-8 space-y-8 shadow-sm">
@@ -112,9 +112,9 @@ const FeaturesFeatures = () => {
                             {/* Card 2 */}
                             <div style={{
                                 clipPath:
-                                    "polygon(0 0, 75% 0, 100% 25%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
+                                    "polygon(0 0, 90% 0, 100% 15%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
                                 WebkitClipPath:
-                                    "polygon(0 0, 75% 0%, 100% 25%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
+                                    "polygon(0 0, 90% 0, 100% 15%, 100% 70%, 100% 100%, 0 100%, 0% 80%, 0% 30%)",
                                 border: `1px sm:border-2 solid`,
                                 borderRadius: '8px sm:12px',
                             }} className="bg-white py-12 px-8 space-y-8 shadow-sm">

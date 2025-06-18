@@ -32,9 +32,9 @@ const HeroSection: React.FC = () => {
 
             <div className="flex flex-col mt-8  border-[#383838] rounded-xl p-2 gap-6 md:flex-row">
               {/* CTA Button */}
-              <a href="https://console.supermemory.ai/login" target="_blank" className="button-wrapper w-[100%] text-center sm:w-[50%] md:w-auto w-inline-block">
-                <div className="button navbar flex items-center justify-center ">
-                  <div className="p-1 flex gap-6 text-center  w-[100%] ">
+              <a href="https://console.supermemory.ai/login" target="_blank" className="button-wrapper  w-[100%] text-center sm:w-[50%] md:w-auto w-inline-block">
+                <div className="button navbar s flex items-center justify-center ">
+                  <div className="p-1 flex gap-6  text-center  w-[100%] ">
                     <div className="text-[1rem] w-[100%]  text-center md:text-[1.2rem] ">
                       Get supermemory
                       <sup className="text-[.5rem]">TM</sup>

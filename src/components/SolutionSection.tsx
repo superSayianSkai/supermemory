@@ -1,4 +1,4 @@
-import { useState, useEffect} from "react";
+import { useState} from "react";
 
 const SolutionSection: React.FC = () => {
     const [state, setState] = useState("copy");

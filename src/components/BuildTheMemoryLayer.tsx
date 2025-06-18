@@ -2,7 +2,8 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const BuildTheMemoryLayer = () => {
-    const sectionRefs = useRef([]);
+    const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
+
     const [activeIndex, setActiveIndex] = useState(null);
 
     useEffect(() => {
@@ -52,7 +53,7 @@ const BuildTheMemoryLayer = () => {
 
     // Throttle scroll events for better performance
     useEffect(() => {
-        let timeoutId = null;
+        let timeoutId: ReturnType<typeof setTimeout> | null = null;
 
         const throttledHandleScroll = () => {
             if (timeoutId === null) {
@@ -62,6 +63,7 @@ const BuildTheMemoryLayer = () => {
                 }, 16); // ~60fps
             }
         };
+
 
         window.addEventListener("scroll", throttledHandleScroll, { passive: true });
         handleScroll(); // Initial call
@@ -78,8 +80,8 @@ const BuildTheMemoryLayer = () => {
         <div className="pt-20 bg-[#e1e1e1] md:px-4 pb-20 sm:pt-32 sm:pb-32 lg:pt-40 lg:pb-40 relative overflow-hidden">
             <div className="max-w-7xl mx-auto  space-y-8 sm:space-y-10 lg:space-y-12">
                 <div data-aos="fade-up" className="text-black opacity-50   px-4 sm:px-6 lg:px-8  text-xs sm:text-sm tracking-wider text-left">FEATURES  •  FEATURES  •  FEATURES</div>
-                <div  className="mb-12 sm:mb-12 px-4 sm:px-6 lg:px-8 lg:mb-16 text-left">
-                    <h2  data-aos="fade-up" className="text-[1.95rem] mb-[70px] sm:text-4xl xl:text-5xl sm:max-w-[20ch] font-semibold text-gray-900  leading-8 md:leading-12">
+                <div className="mb-12 sm:mb-12 px-4 sm:px-6 lg:px-8 lg:mb-16 text-left">
+                    <h2 data-aos="fade-up" className="text-[1.95rem] mb-[70px] sm:text-4xl xl:text-5xl sm:max-w-[20ch] font-semibold text-gray-900  leading-8 md:leading-12">
                         Build the memory layer your product deserves
                     </h2>
 
@@ -87,9 +89,11 @@ const BuildTheMemoryLayer = () => {
 
                 {features.map((feature, index) => (
                     <div
-                      
+
                         key={feature.id}
-                        ref={(el) => (sectionRefs.current[index] = el)}
+                        ref={(el: HTMLDivElement | null): void => {
+                            sectionRefs.current[index] = el;
+                        }}
                         className={`m-4 mb-10 mt-[10px] p-6 md:p-8 lg:p-24   relative transition-colors duration-300 ease-in-out 
               ${activeIndex === index ? "bg-white" : "bg-gray-200"}
               `}
